@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For my principessa 🤍</title>
+    <link href="https://googleapis.com" rel="stylesheet">
+    <style>
+        body {
+            background-color: #0b0c10;
+            color: #e5e5e5;
+            font-family: 'Playfair Display', serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            margin: 0;
+            padding: 40px 20px;
+            box-sizing: border-box;
+            position: relative;
+            overflow-x: hidden;
+        }
+
+        /* Efecto de luces difusas de fondo estilo Shoegaze/Joji */
+        body::before {
+            content: "";
+            position: fixed;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(43,23,79,0.4) 0%, rgba(13,27,42,0.3) 40%, rgba(11,12,16,1) 70%);
+            z-index: -1;
+            pointer-events: none;
+        }
+
+        .container {
+            max-width: 550px;
+            width: 100%;
+            text-align: left;
+            padding: 20px;
+            border-left: 1px solid #333333;
+            padding-left: 25px;
+            z-index: 1;
+        }
+
+        .player-container {
+            margin-bottom: 40px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+
+        iframe {
+            border-radius: 12px;
+            box-shadow: 0px 10px 30px rgba(0,0,0,0.6);
+        }
+
+        p {
+            font-size: 1.15rem;
+            line-height: 1.8;
+            letter-spacing: 0.5px;
+            white-space: pre-line;
+            margin-bottom: 35px;
+        }
+
+        .highlight {
+            font-family: 'Courier Prime', monospace;
+            color: #bd9a5f; /* Tono bronce para resaltar el español */
+            font-size: 1.05rem;
+            display: inline-block;
+            border-left: 2px solid #555;
+            padding-left: 10px;
+            margin: 10px 0;
+        }
+
+        .signature {
+            font-family: 'Courier Prime', monospace;
+            font-size: 1.1rem;
+            color: #ffffff;
+            margin-top: 40px;
+            letter-spacing: 1px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Reproductor de Spotify Oficial de Glimpse of Us (Joji) -->
+        <div class="player-container">
+            <iframe style="border-radius:12px" 
+                    src="https://spotify.com" 
+                    width="100%" 
+                    height="152" 
+                    frameBorder="0" 
+                    allowfullscreen="" 
+                    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
+                    loading="lazy">
+            </iframe>
+        </div>
+
+        <!-- El poema con tus detalles tal cual los querías -->
+        <p>
+        I don't think you realize how special you make me feel
+        In the little things
+        The way you talk to me
+        The way you make me laugh when I wanst even trying to smile
+        The way somehow a normal day feels different just because you are part of it.
+
+        You know the world is often nothing but beautiful noise, a heavy distorted static that blurs the edges of time yet I think you exist like a soft reverb in all this chaos like a quiet sanctuary written just for me.
+
+        If life is a song of longing you are the sweetest melody, <span class="highlight">tu voz me encanta es simplemente tan hermosa que no tengo palabras ni para expresar mi amor hacia ti mi principessa.</span>
+
+        You are the line of poetry I read when I need to remember the light.
+        Tday the universe aligned to give you breath.
+        And my ordinary world found its luz
+        </p>
+
+        <div class="signature">happy birthday my love</div>
+    </div>
+
+</body>
+</html>
