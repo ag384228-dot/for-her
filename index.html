@@ -22,7 +22,6 @@
             overflow-x: hidden;
         }
 
-        /* Efecto de luces difusas de fondo estilo Shoegaze/Joji */
         body::before {
             content: "";
             position: fixed;
@@ -45,16 +44,35 @@
             z-index: 1;
         }
 
-        .player-container {
+        /* Botón Estético para la Música */
+        .music-button-container {
             margin-bottom: 40px;
             width: 100%;
             display: flex;
             justify-content: center;
         }
 
-        iframe {
-            border-radius: 12px;
-            box-shadow: 0px 10px 30px rgba(0,0,0,0.6);
+        .music-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background-color: transparent;
+            color: #bd9a5f;
+            border: 1px solid #bd9a5f;
+            padding: 12px 24px;
+            font-family: 'Courier Prime', monospace;
+            font-size: 0.95rem;
+            text-decoration: none;
+            border-radius: 30px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(189, 154, 95, 0.1);
+        }
+
+        .music-btn:hover {
+            background-color: #bd9a5f;
+            color: #0b0c10;
+            box-shadow: 0 4px 20px rgba(189, 154, 95, 0.4);
+            transform: translateY(-2px);
         }
 
         p {
@@ -67,7 +85,7 @@
 
         .highlight {
             font-family: 'Courier Prime', monospace;
-            color: #bd9a5f; /* Tono bronce para resaltar el español */
+            color: #bd9a5f;
             font-size: 1.05rem;
             display: inline-block;
             border-left: 2px solid #555;
@@ -85,20 +103,15 @@
     </style>
 </head>
 <body>
-<!-- Reproductor de YouTube Optimizado -->
-        <div class="player-container">
-            <iframe width="100%" 
-                    height="200" 
-                    src="https://youtube-nocookie.com" 
-                    title="Joji - Glimpse of Us" 
-                    frameborder="0" 
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                    allowfullscreen>
-            </iframe>
-        </div>
-   
 
-        <!-- El poema con tus detalles tal cual los querías -->
+    <div class="container">
+        <!-- Botón blindado anti-errores que abre la rola perfecto -->
+        <div class="music-button-container">
+            <a href="https://youtu.be" target="_blank" class="music-btn">
+                <span>📼</span> Press play for Glimpse of Us
+            </a>
+        </div>
+
         <p>
         I don't think you realize how special you make me feel
         In the little things
